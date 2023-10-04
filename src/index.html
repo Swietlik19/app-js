@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Mui as an example -->
+  <link href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+  <script src="//cdn.muicss.com/mui-0.10.3/js/mui.js"></script>
+  <title>App JS</title>
+</head>
+<body>
+  <button class="mui-btn mui-btn--fab mui-btn--accent floating-btn" id="modal-btn">Все</button>
+  <div id="sidebar">
+    <div class="mui--text-light mui--text-display1 mui--align-vertical">JS Blog</div>
+  </div>
+  <div id="content" class="mui-container-fluid">
+    <div class="mui-row">
+      <div class="mui-col-sm-10 mui-col-sm-offset-1">
+        <br>
+        <br>
+        <div class="mui--text-dark-secondary mui--text-body2">Ask a question</div>
+        <br>
+
+        <form class="mui-form" id="form">
+          <div class="mui-textfield mui-textfield--float-label">
+            <input type="text" id="question-input" required minlength="10" maxlength="256">
+            <label for="question-input">Question</label>
+          </div>
+          <button
+            type="submit"
+            id="submit"
+            class="mui-btn mui-btn--raised mui-btn--primary"
+            disabled
+          >
+            Submit
+          </button>
+        </form>
+
+        <br>
+        <br>
+        <div class="mui--text-dark-secondary mui--text-body2">Questions</div>
+        <div class="mui-divider"></div>
+        <br>
+
+        <div id="list"></div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
